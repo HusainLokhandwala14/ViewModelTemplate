@@ -2,8 +2,8 @@ package com.example.viewmodeltemplate
 
 import androidx.lifecycle.ViewModel
 
-class MainActivityViewModel : ViewModel() {
-    var number = 0
+class MainActivityViewModel(val startInt : Int) : ViewModel() {
+    var number = startInt
     fun addone() {
         number++
     }
